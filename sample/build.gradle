@@ -1,0 +1,14 @@
+buildscript {
+    repositories {
+        mavenCentral()
+        maven { url 'https://oss.sonatype.org/content/repositories/snapshots' }
+        maven { url uri('../repo') }
+
+    }
+    dependencies {
+        classpath 'fr.eyal:buzzPlugin:1.0'
+    }
+}
+
+apply plugin: "buzz"
+

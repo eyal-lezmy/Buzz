@@ -1,0 +1,28 @@
+apply plugin: 'groovy'
+
+dependencies {
+    compile gradleApi()
+    compile "org.codehaus.groovy:groovy-all:1.8.6"
+}
+
+apply plugin: 'maven'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile 'junit:junit:4.11'
+    compile 'com.googlecode.soundlibs:jlayer:1.0.1-1'
+}
+
+group = 'fr.eyal'
+version = '1.0'
+
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            repository(url: uri('../repo'))
+        }
+    }
+}
