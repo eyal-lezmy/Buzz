@@ -1,5 +1,10 @@
+#IntelliJ
+.idea/workspace.xml
+.idea/tasks.xml
+
+#gradle
 .gradle
 build/
 
-# Ignore Gradle GUI config
-gradle-app.setting
+#project
+repo/
